@@ -979,23 +979,9 @@ function exportResults() {
 	        
 	        }
 
-	        if (campaignTrail_temp.iamapoopybuttfaceandhavenolife) {
-	        	setInterval(function(){
-	        		try {
-	        			document.getElementsByClassName("person_image")[0].style.aspectRatio=1.3
-	        			document.getElementsByClassName("person_image")[0].style.filter="hue-rotate(180deg)"
-	        		} catch {
-	        			console.log("you are *such* a sussy baka")
-	        		}
-	        	}, 100);
-	        }
-
 	        aaaaaaaa = 0
-	        if (Number((starting_mult - encrypted).toFixed(2)) != campaignTrail_temp.difficulty_level_multiplier.toFixed(2)) {
-	        	aaaaaaaa = "Cheated difficulty"
-	        } else {
-	        	aaaaaaaa = campaignTrail_temp.difficulty_level_multiplier.toFixed(1)
-	        }
+	        aaaaaaaa = campaignTrail_temp.difficulty_level_multiplier.toFixed(1)
+
 
 	        rrrrr = "<div id='difficulty_mult'><br><b>Difficulty Multiplier:</b> "+aaaaaaaa+"</div><br>"
 
