@@ -75,15 +75,27 @@
 <button id="enableCheatMode" onclick="document.getElementById('cheatmode').style.display='block'">
   Enable Cheat Mode
 </button><br><br>
-<button onclick="">
-  Enable Optimal RNG (Not working)
+<button id="modLoadReveal" onclick="if(document.getElementById('modloaddiv').style.display != 'none'){document.getElementById('modloaddiv').style.display = 'none'}else{document.getElementById('modloaddiv').style.display = 'block'}">
+  ORNG selector
 </button><br><br>
+<div id="modloaddiv" style="display:none">
+  <select name="mod" id="modSelect" onchange="modSelectChange()">
+    <option value="Optimal RNG">ORNG</option>
+  </select>
+  <div id="customMenu"><br>
+  <b>Code Set 1:</b><br>
+  <textarea id="codeset1" width=400 height=300></textarea><br>
+  <b>Code Set 2:</b><br>
+  <textarea id="codeset2" width=400 height=300></textarea><br>
+  </div>
+  <br><br><button id="submitMod">Submit</button>
 <button id="modLoadReveal" onclick="if(document.getElementById('modloaddiv').style.display != 'none'){document.getElementById('modloaddiv').style.display = 'none'}else{document.getElementById('modloaddiv').style.display = 'block'}">
   Mod Loader
 </button><br><br>
 <div id="modloaddiv" style="display:none">
   <select name="mod" id="modSelect" onchange="modSelectChange()">
     <option value="other">Other</option>
+	<option value="PanzerUltimate">2021 (ThePinkPanzer)</option>
     <option value="1796_Jefferson">1796 (Jefferson)</option>
     <option value="1796_Adams">1796 (Adams)</option>
     <option value="1844b_PolkDallas">1844b (Polk/Dallas)</option>
