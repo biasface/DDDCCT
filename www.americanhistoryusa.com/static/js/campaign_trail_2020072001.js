@@ -1,3 +1,20 @@
+if (window.localStorage.getItem("margin_form") == "#C9C9C9") {
+	campaignTrail_temp.margin_format = "#C9C9C9"
+} else {
+	campaignTrail_temp.margin_format = "#FFFFFF"
+}
+function encode(str) {
+ 
+      
+    const revArray = [];
+    const length = str.length - 1;
+      
+    for(let i = length; i >= 0; i--) {
+        revArray.push(str[i]);
+    }
+      
+    return revArray.join('');
+}
 function gradient(interval, min, max) {
 	if (interval < min) {
 		return min
@@ -231,9 +248,12 @@ function exportResults() {
         player_candidate: campaignTrail_temp.candidate_id,
         player_answers: campaignTrail_temp.player_answers,
         player_visits: campaignTrail_temp.player_visits,
-        results_ov,
-        results_state
-    }
+        overall_results: campaignTrail_temp.final_overall_results,
+        state_results: campaignTrail_temp.final_state_results,
+        difficulty_multiplier: campaignTrail_temp.difficulty_level_multiplier,
+	starting_mult: starting_mult
+    }	   
+}	  
     download(JSON.stringify(results), "results.json", 'text/plain')
 }
 	
