@@ -270,20 +270,6 @@ results = {
 	diff_mod = false
 
 	$("#submitMod").click(function() {
-		if ($("#importfile")[0].value !="") 
-		{
-const content = document.querySelector('.content');
-const [file] = document.querySelector('input[type=file]').files;
-const reader = new FileReader();
-
-reader.onload = function(fle) {
-    importedtext=fle.target.result
-		importedtext=encode(importedtext)
-		importedtext=atob(importedtext)
-	campaignTrail_temp.dagakotowaru=importedtext
- }
-reader.readAsText(file);			
-		}
 		 if ($("#modSelect")[0].value == "other") 
 		 {
 			important_info = $("#codeset3")[0].value;
