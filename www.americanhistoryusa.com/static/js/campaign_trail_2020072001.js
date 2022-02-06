@@ -235,7 +235,7 @@ function download(content, fileName, contentType) {
     a.click();
 }
 function exportResults() {
-if(1==1)
+if(campaignTrail_temp.iamapoopybuttfaceandhavenolife !=true && dirtyhacker3 == null)
 {
 results = {
         election_id: campaignTrail_temp.election_id,
@@ -257,7 +257,7 @@ results = {
         player_visits: campaignTrail_temp.player_visits,
         overall_results: campaignTrail_temp.final_overall_results,
         state_results: campaignTrail_temp.final_state_results,
-        difficulty_multiplier: 696969,
+        difficulty_multiplier: campaignTrail_temp.difficulty_level_multiplier,
 	starting_mult: starting_mult
     }	
 }	
