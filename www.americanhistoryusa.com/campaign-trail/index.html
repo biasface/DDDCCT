@@ -80,7 +80,7 @@
 </button><br><br>
 <div id="modloaddiv" style="display:none">
   <select name="mod" id="modSelect" onchange="modSelectChange()">
-<option value="other">Other</option>
+	<option value="other">Other</option>
     <option value="1796_Jefferson">1796 (Jefferson)</option>
     <option value="1796_Adams">1796 (Adams)</option>
     <option value="1836TX_Austin">1836TX (Austin)</option>    
@@ -94,6 +94,13 @@
     <option value="1876_TildenHendricks">1876 (Tilden/Hendricks)</option>
     <option value="1876_TildenHancock">1876 (Tilden/Hancock)</option>
     <option value="1876_TildenBrown">1876 (Tilden/Brown)</option>
+    <option value="1880_GarfieldArthur">1880 (Garfield/Arthur)</option>
+    <option value="1880_GarfieldBruce">1880 (Garfield/Bruce)</option>
+    <option value="1880_GarfieldMaynard">1880 (Garfield/Maynard)</option>
+    <option value="1880_GarfieldGafield">1880 (Garfield/Gafield)</option>
+    <option value="1880_HancockEnglish">1880 (Hancock/English)</option>
+    <option value="1880_HancockThurman">1880 (Hancock/Thurman)</option>
+    <option value="1880_HancockBayard">1880 (Hancock/Bayard)</option>
     <option value="1884_Cleveland">1884 (Cleveland)</option>
     <option value="1884_Blaine">1884 (Blaine)</option>
     <option value="1892_ClevelandStevenson">1892 (Cleveland/Stevenson)</option>
@@ -107,6 +114,12 @@
     <option value="1908_TaftSherman">1908 (Taft/Sherman)</option>
     <option value="1908_TaftSheldon">1908 (Taft/Sheldon)</option>
     <option value="1908_BryanKern">1908 (Bryan/Kern)</option>
+    <option value="1912b_WilsonMarshall">1912b (Wilson/Marshall)</option>
+    <option value="1912b_WilsonBurke">1912b (Wilson/Burke)</option>
+    <option value="1912b_WilsonChamberlain">1912b (Wilson/Chamberlain)</option>
+    <option value="1912b_TaftSherman">1912b (Taft/Sherman)</option>
+    <option value="1912b_TaftHadley">1912b (Taft/Hadley)</option>
+    <option value="1912b_TaftFairbanks">1912b (Taft/Fairbanks)</option>
     <option value="1924_CoolidgeDawes">1924 (Coolidge/Dawes)</option>
     <option value="1932_RooseveltGarner">1932 (Roosevelt/Garner)</option>
     <option value="1932_RooseveltMcAdoo">1932 (Roosevelt/McAdoo)</option>
@@ -214,6 +227,15 @@
     <option value="1968TNO_HarringtonMcCarthy">1968 TNO (Harrington/McCarthy)</option>
     <option value="1968TNO_HarringtonNeuberger">1968 TNO (Harrington/Neuberger)</option>
     <option value="1968TNO_HarringtonByrd">1968 TNO (Harrington/Byrd)</option>
+    <option value="1968Viva_JohnsonHumphrey">1968 Viva Kennedy (Johnson/Humphrey)</option> 
+    <option value="1968Viva_JohnsonBrown">1968 Viva Kennedy (Johnson/Brown)</option> 
+    <option value="1968Viva_JohnsonLong">1968 Viva Kennedy (Johnson/Long)</option> 
+    <option value="1968Viva_NixonAgnew">1968 Viva Kennedy (Nixon/Agnew)</option> 
+    <option value="1968Viva_NixonWilkinson">1968 Viva Kennedy (Nixon/Wilkinson)</option> 
+    <option value="1968Viva_NixonRhodes">1968 Viva Kennedy (Nixon/Rhodes)</option> 
+    <option value="1968Viva_WallaceLeMay">1968 Viva Kennedy (Wallace/LeMay)</option> 
+    <option value="1968Viva_WallaceChandler">1968 Viva Kennedy (Wallace/Chandler)</option> 
+    <option value="1968Viva_WallaceByrd">1968 Viva Kennedy (Wallace/Byrd)</option>
     <option value="1972_McGovernEagleton">1972 (McGovern/Eagleton)</option>
     <option value="1972_McGovernFarenthold">1972 (McGovern/Farenthold)</option>
     <option value="1972_McGovernChisholm">1972 (McGovern/Chisholm)</option>
@@ -232,6 +254,9 @@
     <option value="1972RFK_ReaganFord">1972 RFK (Reagan/Ford)</option>
     <option value="1972RFK_ReaganBush">1972 RFK (Reagan/Bush)</option>
     <option value="1972RFK_ReaganFong">1972 RFK (Reagan/Fong)</option>
+    <option value="1972Mc_McGovernHart">1972 McGoverning (McGovern/Hart)</option>
+    <option value="1972Mc_McGovernNelson">1972 McGoverning (McGovern/Nelson)</option>
+    <option value="1972Mc_McGovernCarter">1972 McGoverning (McGovern/Carter)</option>
     <option value="1976Reagan_CarterMondale">1976Reagan (Carter/Mondale)</option>
     <option value="1976Reagan_CarterChurch">1976Reagan (Carter/Church)</option>
     <option value="1976Reagan_CarterGlenn">1976Reagan (Carter/Glenn)</option>
@@ -332,6 +357,7 @@
     <option value="2000b_BuchananDanforth">2000b (Buchanan/Danforth)</option>
     <option value="2000b_BuchananThompson">2000b (Buchanan/Thompson)</option>
     <option value="2000b_BuchananCain">2000b (Buchanan/Cain)</option>
+    <option value="2001_NYC">2001 NYC Mayor (Bloomberg)</option>
     <option value="2004_KerryEdwards">2004 (Kerry/Edwards)</option>
     <option value="2004_KerryGephardt">2004 (Kerry/Gephardt)</option>
     <option value="2004_KerryGraham">2004 (Kerry/Graham)</option>
@@ -416,7 +442,7 @@
     <option value="2020b_ClintonKaine">2020b (Clinton/Kaine)</option>
     <option value="2021_YoungkinSears">2021 VA Governor (Youngkin/Sears)</option>
     <option value="2022_Oz">2022 PA Senate (Oz)</option>
-    <option value="2018house">2018 House Midterms (EARLY BETA)</option>
+    <option value="2018house">2018 House Midterms (Alpha Ver 0.2)</option>
   </select>
   <div id="customMenu"><br>
   <b>Code Set 1:</b><br>
